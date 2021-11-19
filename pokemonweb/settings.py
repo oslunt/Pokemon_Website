@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
+
+superuser: ash
+password: pikachu
 """
 
 from pathlib import Path
@@ -82,14 +85,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'pokemon',          #Create a database in pgadmin named pokemon
-        'USER': 'myadmin',          #Change this to your azure admin name
-        'PASSWORD': getpass(),      #You can just set this equal to your password as a string
-        'HOST': 'is415server.postgres.database.azure.com',  #Fill in with your own azure
+        'USER': 'mypgsql',          #Change this to your azure admin name
+        'PASSWORD': 'p@ssw0rd',      #You can just set this equal to your password as a string
+        'HOST': '403-server.postgres.database.azure.com',  #Fill in with your own azure
         'PORT': '5432'      #I think this should stay the same but just double check your own azure port
     }
 }
-
-
+ 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
