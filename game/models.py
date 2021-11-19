@@ -16,6 +16,9 @@ class Pokemon(models.Model):
     low_num = models.IntegerField()
     high_num = models.IntegerField()
     wild_pokemon = models.BooleanField(default=True) #if updated to false, pokemon has been caught
+
+    def __str__(self):
+        return (self.poke_name)
     
 
 
