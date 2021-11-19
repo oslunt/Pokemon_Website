@@ -4,5 +4,5 @@ from .views import leaderboardPageView
 
 urlpatterns = [
     path("", indexPageView, name="index"),
-    path("Leaderboard", leaderboardPageView, name="leaderboard"),
+    path("leaderboard/", leaderboardPageView, name="leaderboard"),
 ]

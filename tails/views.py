@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def indexPageView(request) :
-    return HttpResponse("This is the index page")
+    return render(request, 'tails/index.html')
 
 def leaderboardPageView(request) :
-    return HttpResponse("This is the leaderboard page")
+    return render(request, "tails/leaderboard.html")
