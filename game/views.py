@@ -3,4 +3,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def gamePageView(request) :
-    return HttpResponse("This is the games page")
+    return render(request, 'game.html')
