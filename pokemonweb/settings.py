@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'pokemonweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -88,9 +89,10 @@ DATABASES = {
         'USER': 'mypgsql',          #Change this to your azure admin name
         'PASSWORD': 'p@ssw0rd',      #You can just set this equal to your password as a string
         'HOST': '403-server.postgres.database.azure.com',  #Fill in with your own azure
-        'PORT': '5432'      #I think this should stay the same but just double check your own azure port
-    }
+        'PORT': '5433'      #I think this should stay the same but just double check your own azure port
+   }
 }
+
  
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
